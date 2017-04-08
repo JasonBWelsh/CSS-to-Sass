@@ -1,0 +1,33 @@
+/* Header ***/
+
+.main-header {
+	font-family: 'Source Sans Pro', 'Kranky', 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	padding: 1em 1em 0 1em;
+	margin-bottom: 20px; /* to push down banner content */
+}
+
+.name {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+
+.main-nav li {
+	background: linear-gradient(#c4f9fc 10%, #fff, #c4f9fc 90%);
+	margin-bottom: 10px;
+}
+
+.main-nav a {
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+	background: #c4f9fc;
+	font-weight: bold;
+}

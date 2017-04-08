@@ -1,0 +1,10 @@
+/* Flexbox ***/
+
+.main-header,
+.footer-list {
+	display: flex;
+}
+
+.main-header {
+	flex-direction: column;
+}
