@@ -1,28 +1,25 @@
-.main-footer {
-	background: linear-gradient(#c4f9fc, #fff);
-	padding-bottom: 2em;
-}
 
 /* Footer ***/
 
 .main-footer {
+	background: #fff;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	font-size: 1rem;
 }
 
 .footer-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer-list li:first-child {
+	& li:first-child {
 	margin-left: 1em;
+	}
+	& li:nth-child(2) { /* back to top in footer list */
+		margin-right: 1em;
+	}
+	& li:nth-child(n+3) {
+		display: none;
+	}
 }
 
-.footer-list li:nth-child(2) { /* back to top in footer list */
-	margin-right: 1em;
-}
 
 
-.footer-list li:nth-child(n+3) {
-	display: none;
-}
+

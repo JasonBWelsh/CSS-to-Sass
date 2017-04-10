@@ -1,10 +1,18 @@
 /* Flexbox ***/
 
-.main-header,
-.footer-list {
+.main-header {
 	display: flex;
+	flex-direction: column;
 }
 
-.main-header {
-	flex-direction: column;
+.contact-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-list {
+	display: flex;
+	justify-content: space-between;
 }
