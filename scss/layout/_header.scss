@@ -1,35 +1,37 @@
 /* Header ***/
 
-.main {
-	&-header {
-		@extend %centered;
-		font-family: 'Source Sans Pro', 'Kranky', 'Lato', Helvetica, Arial, sans-serif;
-		font-size: 1.2rem;
-		width: 100%;
-		max-width: 100%;
-		padding: 1em 1em 0 1em;
-		margin-bottom: 20px; /* to push down banner content */
-	}
+.main-header {
+	@extend %centered;
+	font-family: 'Source Sans Pro', 'Kranky', 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 1.2rem;
+	width: 100%;
+	max-width: 100%;
+	padding: 1em 1em 0 1em;
+	margin-bottom: 20px; /* to push down banner content */
+}
 
-	&-nav li {
+.main-nav {
+	& li {
 		@extend %br-12;
-		background: #fff;
+		background: $color-body;
+		border: 1px solid $color-border-light;
 		margin-bottom: 10px;
 	}
 
-	&-nav a {
+	& a {
+		@extend %br-12;
 		display: block;
 		padding: 10px 15px;
+		color: $color-text-light;
 			&:hover {
-			background: #c4f9fc;
-			font-weight: bold;
+			background: lighten($color-body, 3%);
 			}
 		}
 }
 
-
 .name {
 	margin-top: 0;
 	margin-bottom: 1em;
+	font-weight: normal;
 }
 

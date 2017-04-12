@@ -8,11 +8,15 @@
 
 body {
 	margin: 0;
-	background: #c4f9fc; 
-	color: #576366;
+	background: $color-body; 
+	color: $color-text-body;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.4;
+}
+
+p:not(.tag) {
+	color: $color-text-light;
 }
 
 ul,
@@ -36,11 +40,9 @@ h1,
 h2,
 h3,
 h4,
-.name a,
-.main-nav a,
-.tag,
-.main-footer a {
-	color: #082d77;
+.name a {
+	color: $color-text-light;
+	font-weight: normal;
 }
 
 h1,
@@ -49,7 +51,14 @@ h1,
 }
 
 h2 {
-	font-size: 1.2rem;
+	@extend %br-12;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1.3rem;
+	border: 1px solid $color-prim;
 }
 
 h3 {

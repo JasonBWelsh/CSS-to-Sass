@@ -1,0 +1,36 @@
+
+// Descriptive color variables
+
+$white : #fff;
+$black : #000;
+$grey  : #878787;
+
+$viking : #68B3E0; /* #c4f9fc; */ /*body*/ /*#2391D3*/ /*#68B3E0*/
+$nevada : #576366; /*grey text*/
+$catalina-blue : #082d77; /*links*/
+$porcelain : #edeff0; /* .portfolio border bottom */
+$fountain-blue : #52bab3; /* contact links */
+
+
+
+// Functional color variables
+
+$color-prim : $white;
+$color-sec : '';
+
+
+$color-text-body : $nevada;
+$color-text-light: $white;
+$color-text-dark : $catalina-blue;
+$color-text-base : $viking;
+
+
+$color-border-light : $white;
+$color-border-dark : '';
+
+$color-link-default : '';
+$color-link-visited : '';
+
+$color-shadow : rgba($black,.8);
+$color-body : $viking;
+
