@@ -486,7 +486,9 @@ img {
   @media (min-width: 1024px) {
     .main-header {
       width: 80%;
-      max-width: 1150px; } }
+      max-width: 1150px;
+      padding-left: 0;
+      padding-right: 0; } }
 
 .main-nav li {
   border-radius: 13px;
@@ -511,6 +513,9 @@ img {
   color: #fff; }
   .main-nav a:hover {
     background: #75b9e3; }
+@media (min-width: 1024px) {
+  .main-nav a:last-child {
+    padding-right: 0; } }
 
 .name {
   margin-top: 0;

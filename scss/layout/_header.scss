@@ -19,6 +19,8 @@
 	@media #{$brk-wide} {
 		width: 80%;
 		max-width: 1150px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -53,6 +55,14 @@
 			background: lighten($color-body, 3%);
 			}
 		}
+
+	& a:last-child {
+		@media #{$brk-wide} {
+			padding-right: 0;
+		}
+	}
+
+
 }
 
 .name {
