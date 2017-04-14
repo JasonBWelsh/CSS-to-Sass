@@ -5,12 +5,12 @@ $white : #fff;
 $black : #000;
 $grey  : #878787;
 
-$viking : #68B3E0; /* #c4f9fc; */ /*body*/ /*#2391D3*/ /*#68B3E0*/
+$viking : #68B3E0; 
 $nevada : #576366; /*grey text*/
 $catalina-blue : #082d77; /*links*/
 $porcelain : #edeff0; /* .portfolio border bottom */
 $fountain-blue : #52bab3; /* contact links */
-
+$french-pass : #c4f9fc;
 
 
 // Functional color variables
@@ -23,6 +23,7 @@ $color-text-body : $nevada;
 $color-text-light: $white;
 $color-text-dark : $catalina-blue;
 $color-text-base : $viking;
+$color-banner-bg : $french-pass;
 
 
 $color-border-light : $white;
@@ -34,3 +35,24 @@ $color-link-visited : '';
 $color-shadow : rgba($black,.8);
 $color-body : $viking;
 
+
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-lato : 'Lato', $stack-sans-serif;
+
+// Border radius
+
+$br : 13px;
+
+// Asset paths
+
+$path-img : '../img';
+
+
+// Media query breakpoints 
+
+$brk-narrow : '(min-width: 768px)';
+
+$brk-wide : '(min-width: 1024px)';

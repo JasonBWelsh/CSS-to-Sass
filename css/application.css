@@ -9,8 +9,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Kranky|Lato");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -406,10 +405,6 @@ template {
 [hidden] {
   display: none; }
 
-/* #c4f9fc; */
-/*body*/
-/*#2391D3*/
-/*#68B3E0*/
 /*grey text*/
 /*links*/
 /* .portfolio border bottom */
@@ -421,12 +416,13 @@ template {
   box-sizing: border-box; }
 
 body {
-  margin: 0;
-  background: #68B3E0;
-  color: #576366;
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-weight: normal;
+  color: #576366;
+  background: #68B3E0;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  margin: 0; }
 
 p:not(.tag) {
   color: #fff; }
@@ -458,13 +454,13 @@ h1,
   font-size: 2rem; }
 
 h2 {
+  font-size: 1.3rem;
   display: inline-block;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 1.3rem;
-  border: 1px solid #fff; }
+  /* border: 1px solid $color-prim; */ }
 
 h3 {
   font-size: 1.1rem; }
@@ -475,19 +471,40 @@ img {
 /*** LAYOUT IMPORTS ***/
 /* Header ***/
 .main-header {
-  font-family: 'Source Sans Pro', 'Kranky', 'Lato', Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   width: 100%;
   max-width: 100%;
   padding: 1em 1em 0 1em;
   margin-bottom: 20px;
   /* to push down banner content */ }
+  @media (min-width: 768px) {
+    .main-header {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 2em; } }
+  @media (min-width: 1024px) {
+    .main-header {
+      width: 80%;
+      max-width: 1150px; } }
 
 .main-nav li {
+  border-radius: 13px;
   background: #68B3E0;
   border: 1px solid #fff;
   margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .main-nav li {
+      border: none; } }
+  @media (min-width: 1024px) {
+    .main-nav li {
+      width: 80%;
+      max-width: 1150px; } }
+  @media (min-width: 1024px) {
+    .main-nav li {
+      margin-left: 7px;
+      margin-right: 7px; } }
 .main-nav a {
+  border-radius: 13px;
   display: block;
   padding: 10px 15px;
   color: #fff; }
@@ -499,18 +516,86 @@ img {
   margin-bottom: 1em;
   font-weight: normal; }
 
+/* Main ***/
+@media (min-width: 768px) {
+  main {
+    width: 90%;
+    margin: 0 auto; } }
+@media (min-width: 1024px) {
+  main {
+    width: 80%;
+    max-width: 1150px; } }
+
 /* Banner ***/
 .banner {
   background: #fff;
+  background: linear-gradient(#c4f9fc 5%, #fff, #c4f9fc 95%);
   padding: 20px; }
+  @media (min-width: 768px) {
+    .banner {
+      margin-top: 1em;
+      padding-top: 3em;
+      padding-bottom: 3em; } }
+
+@media (min-width: 768px) {
+  .banner-wrap {
+    width: 90%;
+    margin: 0 auto; } }
+@media (min-width: 1024px) {
+  .banner-wrap {
+    width: 80%;
+    max-width: 1150px; } }
 
 .profile-image {
+  border-radius: 13px;
   width: 60%;
   box-shadow: 1px 1px 2px #576366; }
+  @media (min-width: 768px) {
+    .profile-image {
+      width: 40%;
+      height: 30%;
+      margin-left: 15px; } }
+  @media (min-width: 1024px) {
+    .profile-image {
+      margin-left: auto;
+      max-width: 40%; } }
 
-/* Layout containers ***/
+@media (min-width: 768px) {
+  .tag {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left; } }
+@media (min-width: 1024px) {
+  .tag {
+    max-width: 50%; } }
+
+/* Portfolio ***/
 .portfolio {
   border-bottom: 1px solid #fff; }
+
+.portfolio > h2 {
+  margin-bottom: 40px; }
+
+.card {
+  padding-bottom: 30px; }
+  .card > h3 {
+    margin-top: 25px; }
+  @media (min-width: 768px) {
+    .card {
+      margin-left: 1em;
+      margin-right: 1em; } }
+
+.card:nth-child(3n+1) {
+  /* removes left margin wall in portfolio on desktop display */ }
+  @media (min-width: 1024px) {
+    .card:nth-child(3n+1) {
+      margin-left: 0; } }
+
+.card:nth-child(3n+3) {
+  /* removes right margin wall in portfolio on desktop display */ }
+  @media (min-width: 1024px) {
+    .card:nth-child(3n+3) {
+      margin-right: 0; } }
 
 /* Skills ***/
 .skills {
@@ -522,18 +607,18 @@ img {
     background: #fff;
     padding: .4em;
     margin-top: 5px; }
+  @media (min-width: 768px) {
+    .skills {
+      border: 1px solid #fff; } }
 
-/* Portfolio ***/
-.portfolio > h2 {
-  margin-bottom: 40px; }
-
-.card {
-  padding-bottom: 30px; }
-  .card > h3 {
-    margin-top: 25px; }
+@media (min-width: 768px) {
+  .skills-list section {
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 /* Contact ***/
 .contact-container {
+  border-radius: 13px;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 3em; }
@@ -550,30 +635,115 @@ img {
 .contact-icon {
   height: 30px;
   margin-right: 15px; }
+@media (min-width: 768px) {
+  .contact-container {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 5em;
+    /* background: $color-prim; */ } }
+@media (min-width: 1024px) {
+  .contact-container {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 /* Footer ***/
 .main-footer {
+  font-size: 1rem;
   background: #fff;
   padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: 1rem; }
+  padding-bottom: 1em; }
 
 .footer-list li:first-child {
   margin-left: 1em; }
+  @media (min-width: 768px) {
+    .footer-list li:first-child {
+      margin-right: auto; } }
 .footer-list li:nth-child(2) {
   /* back to top in footer list */
   margin-right: 1em; }
+  @media (min-width: 768px) {
+    .footer-list li:nth-child(2) {
+      display: none; } }
 .footer-list li:nth-child(n+3) {
   display: none; }
+  @media (min-width: 768px) {
+    .footer-list li:nth-child(n+3) {
+      display: inline-block;
+      margin-left: 25px; } }
+  @media (min-width: 1024px) {
+    .footer-list li:nth-child(n+3) {
+      margin-left: 45px; } }
 .footer-list a {
   color: #68B3E0; }
   .footer-list a:hover {
     color: #082d77; }
+@media (min-width: 768px) {
+  .footer-list {
+    width: 90%;
+    margin: 0 auto; } }
+@media (min-width: 1024px) {
+  .footer-list {
+    padding-left: 60px;
+    padding-right: 60px; } }
 
 /* Flexbox ***/
 .main-header {
   display: flex;
   flex-direction: column; }
+  @media (min-width: 1024px) {
+    .main-header {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    justify-content: space-around; } }
+@media (min-width: 1024px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  .banner-wrap {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  .profile-image {
+    flex: 1; } }
+
+@media (min-width: 768px) {
+  .tag {
+    flex: 2;
+    order: -1; } }
+@media (min-width: 1024px) {
+  .tag {
+    flex: 1; } }
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
+@media (min-width: 768px) {
+  .card {
+    flex: 1 40%; } }
+@media (min-width: 1024px) {
+  .card {
+    flex: 1 30%; } }
+
+@media (min-width: 768px) {
+  .skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+@media (min-width: 768px) {
+  .skills-list section {
+    flex: 1; } }
 
 .contact-list {
   display: flex;
@@ -584,6 +754,9 @@ img {
 .footer-list {
   display: flex;
   justify-content: space-between; }
+  @media (min-width: 1024px) {
+    .footer-list {
+      justify-content: space-around; } }
 
 .main-header, .banner, .portfolio, .skills, .contact {
   text-align: center; }
@@ -595,9 +768,7 @@ img {
 .portfolio, .skills {
   padding-top: 20px; }
 
-h2, .main-nav li, .main-nav a, .profile-image, .contact-container {
+h2 {
   border-radius: 12px; }
-
-/*** Component Imports ***/
 
 /*# sourceMappingURL=application.css.map */

@@ -2,24 +2,49 @@
 
 .main-header {
 	@extend %centered;
-	font-family: 'Source Sans Pro', 'Kranky', 'Lato', Helvetica, Arial, sans-serif;
 	font-size: 1.2rem;
 	width: 100%;
 	max-width: 100%;
 	padding: 1em 1em 0 1em;
 	margin-bottom: 20px; /* to push down banner content */
+
+	@media #{$brk-narrow} {
+
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 2em;
+	}
+
+	@media #{$brk-wide} {
+		width: 80%;
+		max-width: 1150px;
+	}
 }
 
 .main-nav {
 	& li {
-		@extend %br-12;
+		border-radius: $br;
 		background: $color-body;
 		border: 1px solid $color-border-light;
 		margin-bottom: 10px;
+
+		@media #{$brk-narrow} {
+			border: none;
+		}
+
+		@media #{$brk-wide} {
+			width: 80%;
+			max-width: 1150px;
+		}
+
+		@media #{$brk-wide} {
+			margin-left: 7px;
+			margin-right: 7px;
+		}
 	}
 
 	& a {
-		@extend %br-12;
+		border-radius: $br;
 		display: block;
 		padding: 10px 15px;
 		color: $color-text-light;

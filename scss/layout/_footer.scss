@@ -2,21 +2,40 @@
 /* Footer ***/
 
 .main-footer {
+	@include font(1rem);
 	background: $color-prim;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	font-size: 1rem;
 }
 
 .footer-list {
 	& li:first-child {
-	margin-left: 1em;
+		margin-left: 1em;
+
+		@media #{$brk-narrow} {
+
+			margin-right: auto;
+	}
+
 	}
 	& li:nth-child(2) { /* back to top in footer list */
 		margin-right: 1em;
+
+		@media #{$brk-narrow} {
+			display: none;
+		}
 	}
 	& li:nth-child(n+3) {
 		display: none;
+
+		@media #{$brk-narrow} {
+			display: inline-block;
+			margin-left: 25px;
+		}
+
+		@media #{$brk-wide} {
+			margin-left: 45px;
+		}
 	}
 
 	& a {
@@ -24,6 +43,16 @@
 		&:hover {
 			color: $color-text-dark;
 		}
+	}
+
+	@media #{$brk-narrow} {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	@media #{$brk-wide} {
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 }
 

@@ -3,7 +3,95 @@
 .main-header {
 	display: flex;
 	flex-direction: column;
+
+	@media #{$brk-wide} {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
+
+.main-nav {
+
+	@media #{$brk-narrow} {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	@media #{$brk-wide} {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.banner-wrap {
+
+	@media #{$brk-narrow} {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.profile-image {
+
+	@media #{$brk-narrow} {
+		flex: 1;
+	}
+
+}
+
+
+.tag {
+
+	@media #{$brk-narrow} {
+		flex: 2;
+		order: -1;
+	}
+
+	@media #{$brk-wide} {
+		flex: 1;
+	}
+}
+
+
+.row {
+
+	@media #{$brk-narrow} {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.card {
+
+	@media #{$brk-narrow} {
+		flex: 1 40%;
+	}
+
+	@media #{$brk-wide} {
+		flex: 1 30%;
+	}
+}
+
+
+.skills-list {
+
+	@media #{$brk-narrow} {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.skills-list section {
+
+	@media #{$brk-narrow} {
+		flex: 1;
+	}
+}
+
+
 
 .contact-list {
 	display: flex;
@@ -15,4 +103,9 @@
 .footer-list {
 	display: flex;
 	justify-content: space-between;
+
+	@media #{$brk-wide} {
+		justify-content: space-around;
+	}
+
 }
