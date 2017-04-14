@@ -71,7 +71,7 @@
 .initial {
 	@include font(2rem, $weight: bold, $color: $color-text-base);
 	background: $color-prim;
-	padding: 17px;
+	padding: 17px 17px 5px 17px;
 	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	/* color: $color-text-base; */
