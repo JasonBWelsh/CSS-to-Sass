@@ -61,8 +61,11 @@
 
 .name {
 	margin-top: 0;
-	/* margin-bottom: 1em; */
 	font-weight: normal;
+
+	@media #{$brk-wide} {
+		margin-bottom: 0;
+	}
 }
 
 .initial {

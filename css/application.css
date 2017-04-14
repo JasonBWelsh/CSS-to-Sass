@@ -447,8 +447,7 @@ h3,
 h4,
 .name a {
   color: #fff;
-  font-weight: normal;
-  margin-bottom: 0; }
+  font-weight: normal; }
 
 h1,
 .name {
@@ -517,8 +516,10 @@ img {
 
 .name {
   margin-top: 0;
-  /* margin-bottom: 1em; */
   font-weight: normal; }
+  @media (min-width: 1024px) {
+    .name {
+      margin-bottom: 0; } }
 
 .initial {
   font-size: 2rem;
