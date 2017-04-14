@@ -564,10 +564,11 @@ img {
   .tag {
     margin-top: 0;
     margin-bottom: 0;
-    text-align: left; } }
+    text-align: left;
+    max-width: 40%; } }
 @media (min-width: 1024px) {
   .tag {
-    max-width: 50%; } }
+    max-width: 30%; } }
 
 /* Portfolio ***/
 .portfolio {
@@ -610,6 +611,9 @@ img {
   @media (min-width: 768px) {
     .skills {
       border: 1px solid #fff; } }
+  @media (min-width: 1024px) {
+    .skills {
+      border: none; } }
 
 @media (min-width: 768px) {
   .skills-list section {

@@ -63,14 +63,16 @@ main {
 
 .tag {
 
+
 	@media #{$brk-narrow} {
 		margin-top: 0;
 		margin-bottom: 0;
 		text-align: left;
+		max-width: 40%
 	}
 
 	@media #{$brk-wide} {
-		max-width: 50%;
+		max-width: 30%;
 	}
 
 }
@@ -132,6 +134,10 @@ main {
 
 	@media #{$brk-narrow} {
 		border: 1px solid $color-prim;
+	}
+
+	@media #{$brk-wide} {
+		border: none;
 	}
 }
 
