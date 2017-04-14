@@ -29,6 +29,12 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	@media #{$brk-wide} {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .profile-image {
@@ -37,6 +43,9 @@
 		flex: 1;
 	}
 
+	@media #{$brk-wide} {
+
+	}
 }
 
 
@@ -49,6 +58,7 @@
 
 	@media #{$brk-wide} {
 		flex: 1;
+		order: 1;
 	}
 }
 
