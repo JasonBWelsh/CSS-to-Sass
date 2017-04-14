@@ -5,8 +5,9 @@
 	font-size: 1.2rem;
 	width: 100%;
 	max-width: 100%;
-	padding: 1em 1em 0 1em;
+	padding: 1em 1em 0px 1em;
 	margin-bottom: 20px; /* to push down banner content */
+	border-bottom: 1px solid $color-prim;
 
 	@media #{$brk-narrow} {
 
