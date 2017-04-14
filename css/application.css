@@ -476,13 +476,13 @@ img {
   max-width: 100%;
   padding: 1em 1em 0px 1em;
   margin-bottom: 20px;
-  /* to push down banner content */
-  border-bottom: 1px solid #fff; }
+  /* to push down banner content */ }
   @media (min-width: 768px) {
     .main-header {
       width: 90%;
       margin: 0 auto;
-      padding-top: 2em; } }
+      padding-top: 2em;
+      border-bottom: 1px solid #fff; } }
   @media (min-width: 1024px) {
     .main-header {
       width: 80%;
