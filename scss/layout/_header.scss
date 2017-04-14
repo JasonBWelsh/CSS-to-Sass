@@ -56,12 +56,6 @@
 			}
 		}
 
-	& a:last-child {
-		@media #{$brk-wide} {
-			padding-right: 0;
-		}
-	}
-
 
 }
 
