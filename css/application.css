@@ -585,7 +585,7 @@ img {
     max-width: 40%; } }
 @media (min-width: 1024px) {
   .tag {
-    /* max-width: 30%; */ } }
+    text-align: center; } }
 
 /* Portfolio ***/
 .portfolio {
