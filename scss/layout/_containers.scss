@@ -167,8 +167,15 @@ main {
 		margin-top: 30px;
 	}
 
+	&-list {
+		margin-top: 2em;
+		/* padding-top: 20px; */
+		background: $color-prim;
+		border-radius: $br;
+	}
+
 	&-list li {
-		padding-bottom: 20px;
+		/* padding-bottom: 20px; */
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -188,7 +195,7 @@ main {
 		@media #{$brk-narrow} {
 			width: 50%;
 			padding: 10px;
-			margin-bottom: 5em;
+			margin-bottom: 1em;
 			/* background: $color-prim; */
 		}
 
@@ -199,6 +206,7 @@ main {
 	}
 
 }
+
 
 
 
