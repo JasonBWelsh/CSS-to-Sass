@@ -469,6 +469,19 @@ img {
   max-width: 100%; }
 
 /*** LAYOUT IMPORTS ***/
+.main-header, .banner, .portfolio, .skills, .contact {
+  text-align: center; }
+
+.banner, .portfolio, .skills, .contact {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.portfolio, .skills {
+  padding-top: 20px; }
+
+h2 {
+  border-radius: 12px; }
+
 /* Header ***/
 .main-header {
   font-size: 1.2rem;
@@ -526,10 +539,8 @@ img {
   font-weight: bold;
   color: #68B3E0;
   background: #fff;
-  padding: 17px 17px 5px 17px;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  /* color: $color-text-base; */ }
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px; }
 
 /* Main ***/
 @media (min-width: 768px) {
@@ -784,18 +795,5 @@ img {
   @media (min-width: 1024px) {
     .footer-list {
       justify-content: space-around; } }
-
-.main-header, .banner, .portfolio, .skills, .contact {
-  text-align: center; }
-
-.banner, .portfolio, .skills, .contact {
-  padding-left: 1em;
-  padding-right: 1em; }
-
-.portfolio, .skills {
-  padding-top: 20px; }
-
-h2 {
-  border-radius: 12px; }
 
 /*# sourceMappingURL=application.css.map */
